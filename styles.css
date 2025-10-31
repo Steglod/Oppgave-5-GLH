@@ -1,0 +1,217 @@
+body {
+  margin: 0;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  border-bottom: 3px solid black;
+  /* Sticky header css */
+  position: sticky;
+  top: 0;
+  background-color: aliceblue;
+}
+
+.navList {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.logo {
+  height: 32px;
+  width: 32px;
+  background-color: white;
+}
+
+/* MAIN */
+section {
+  height: 100vh;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+/* .button {
+  padding: 10px 12px;
+  width: 100px;
+  border-radius: 40px;
+  border: 2px solid lightgray;
+} */
+.button {
+  padding: 10px 12px;
+  width: 100px;
+  border-radius: 40px;
+  border: 2px solid lightgray;
+}
+
+#enterButton {
+  background-color: forestgreen;
+  transition-property: background-color, scale;
+  transition-timing-function: ease-in;
+  transition-delay: 0.5s;
+  transition-duration: 1s;
+}
+
+#enterButton:hover {
+  /* animation: shake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;  */
+  animation-name: shake, scaleColor;
+  animation-duration: 2.5s, 2s;
+  animation-timing-function: cubic-bezier(0.36, 0.07, 0.19, 0.97);
+  animation-delay: 0.1s, 1s;
+  animation-iteration-count: infinite, 1;
+  animation-fill-mode: both;
+}
+
+@keyframes scaleColor {
+  0%{0}
+  100% {
+    scale: 200%;
+    background-color: crimson;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(5px);
+    transform: translateY(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(-5px);
+    transform: translateY(10px);
+  }
+}
+
+#sirianne {
+  height: 300px;
+  width: 100px;
+  animation-name: sirianneMove;
+  animation-duration: 6s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+@keyframes sirianneMove {
+  0% {
+    transform: translateX(40em);
+    /* transform: translateY(00px); */
+  }
+  100% {
+    transform: translateX(-40em);
+    /* transform: translateY(0px); */
+  }
+}
+
+.entry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#buttonConsessionsBozo {
+
+}
+
+#buttonConsessionsBeardedMan {
+
+}
+
+.conssesionstand {
+  height: 300px;
+  width: 600px;
+  animation-name: weakShake;
+  animation-duration: 6s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+@keyframes weakShake {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(1px);
+    transform: translateY(-1px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(-1px);
+    transform: translateY(1px);
+  }
+}
+
+.bozo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+
+
+.beardedMan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+/* FOOTER */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 3px solid black;
+  padding: 16px;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  color: black;
+}
+
+.hidden {
+  /* Må holdes på bunn */
+  display: none; 
+}

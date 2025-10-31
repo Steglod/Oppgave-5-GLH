@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <!-- Head = informasjon til nettleseren -->
+    <title>Hjem</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- External CSS = link-element som refererer til en css fil -->
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+
+  <body>
+    <!-- Body = innhold til nettsiden -->
+    <header id="header">
+      <img class="logo" alt="Placeholder" src="" />
+      <nav>
+        <ul class="navList">
+          <!-- <a>-element rundt <li> gir støre trykk område, mens li-element rundt <a>-elementet gir mindre trykk område -->
+        </nav>
+    </header>
+
+    <main>
+      <section id="home" class="home">
+        <h1>Sirkus med det normale!</h1>
+        <button id="enterButton" class="button">Enter</button>
+        <img id="sirianne" src="/images/Temp.jpg" alt="Værtinne av sirkuset">
+      </section>
+
+      <section class="entry hidden" id="entry">
+        <h1>Shows</h1>
+        <button id="buttonConsessionsBozo" class="button">Klovnen Boso</button>
+        <button id="buttonConsessionsBeardedMan" class="button">Mannen med skjegg</button>
+        <img class="conssesionstand" src="/images/Temp.jpg" alt="Plass som selger sukkerspinn">
+      </section>
+      
+      <section class="beardedMan hidden" id="beardedMan">
+        <h1>haha</h1>
+        <button id="buttonBeardedManBozo" class="button">Klovnen Bozo</button>
+        <button id="buttonBeardedManConsesion" class="button">Inngang</button>
+        <img src="/images/Temp.jpg" alt="">
+      </section> 
+
+      <section class="bozo hidden" id="bozo">
+        <h1>haha</h1>
+        <button id="buttonBozoBeardedMan" class="button">Man med skjegg</button>
+        <button id="buttonBozoConsesions" class="button">Inngang</button>
+        <img src="/images/Temp.jpg" alt="">
+      </section>
+      
+    </main>
+
+    <footer id="footer" class="footer">
+      <p>Laget av Steffen</p>
+      <a class="contact" href="https://github.com/steglod">
+        <img src="" alt="Placeholder" />
+        <p>Finn meg på github for å se mer</p>
+      </a>
+    </footer>
+  </body>
+</html>
